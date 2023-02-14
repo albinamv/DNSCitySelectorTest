@@ -47,7 +47,7 @@ namespace DnsCitySelectorTests.PageObjects
             if (ElementsCount(_searchResults) == 1)
                 _webDriver.FindElement(_searchInput).SendKeys(Keys.Enter);
             else
-                _webDriver.FindElement(By.XPath(String.Format(_exactSearchResultSelector, cityName))).Click();
+                _webDriver.FindElement(By.XPath(String.Format(_exactSearchResultSelector, cityName.Trim()))).Click();
 
             WaitUntil.WaitSomeInterval(1000);
             return (new MainMenuPageObject(_webDriver));
