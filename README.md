@@ -15,26 +15,6 @@
 * Тесты запускаются для разрешения 1920*1080 px. Тесты для других разрешений не реализованы ввиду ограничений времени на выполнение работы.
 
 
-## Перечень тестов
-
-### Чек-лист позитивных проверок для выбора города
-
-1. Через поиск, корректное значение с заглавной буквы — не реализовано в данный момент, ввиду сложности выбора нужного города из нескольких значеий из-за тега \<mark\>
-2. Через поиск, корретное значение в нижнем регистре — [реализовано](https://github.com/albinamv/DNSCitySelectorTest/blob/5762839ca5f402a46b606447a5fedea9a41269d2/Tests/CitySelectorTests.cs#L48-L58)
-3. Через поиск, корректное значение в верхнем регистре — не реализовано в данный момент
-4. Через поиск, корректное значение с лишними пробелами до и после значения — [реализовано](https://github.com/albinamv/DNSCitySelectorTest/blob/5762839ca5f402a46b606447a5fedea9a41269d2/Tests/CitySelectorTests.cs#L60-L71)
-4. Через поиск, неполное название города — не реализовано в данный момент
-5. Через поиск, название города на англ. раскладке — не реализовано в данный момент
-6. Через список городов под полем для поиска — [реализовано](https://github.com/albinamv/DNSCitySelectorTest/blob/5762839ca5f402a46b606447a5fedea9a41269d2/Tests/CitySelectorTests.cs#L34-L44)
-7. Через список округов и областей — [реализовано](https://github.com/albinamv/DNSCitySelectorTest/blob/5762839ca5f402a46b606447a5fedea9a41269d2/Tests/CitySelectorTests.cs#L100-L113)
-
-### Чек-лист негативных проверок
-
-8. Ввод цифр в поле для поиска города — [реализовано](https://github.com/albinamv/DNSCitySelectorTest/blob/5762839ca5f402a46b606447a5fedea9a41269d2/Tests/CitySelectorTests.cs#L73-L80)
-9. Ввод спец. символов и знаков пунктуации (кроме дефиса) в поле для поиска города — [реализовано](https://github.com/albinamv/DNSCitySelectorTest/blob/5762839ca5f402a46b606447a5fedea9a41269d2/Tests/CitySelectorTests.cs#L82-L89)
-10. Ввод только пробелов в поле для поиска города — [реализовано](https://github.com/albinamv/DNSCitySelectorTest/blob/5762839ca5f402a46b606447a5fedea9a41269d2/Tests/CitySelectorTests.cs#L91-L98)
-
-
 ## Сложности в ходе выполнения задания
 
 1. [Отсуствие поддержки драйвера для Opera](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/)
