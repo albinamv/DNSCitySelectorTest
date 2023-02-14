@@ -1,14 +1,6 @@
-﻿using AngleSharp.Dom;
-using DnsCitySelectorTests.Helpers;
+﻿using DnsCitySelectorTests.Helpers;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DnsCitySelectorTests.PageObjects
 {
@@ -88,6 +80,7 @@ namespace DnsCitySelectorTests.PageObjects
 
         public void ChooseRandomDistrict() 
         {
+            WaitUntil.WaitSomeInterval(500);
             int districtsCount = ElementsCount(_districtsList);
             int districtIndex = random.Next(districtsCount);
             _webDriver.FindElement(_districtsList).FindElements(_listElement).ElementAt(districtIndex).Click();
@@ -95,6 +88,7 @@ namespace DnsCitySelectorTests.PageObjects
 
         public void ChooseRandomRegion()
         {
+            WaitUntil.WaitSomeInterval(500);
             int regionsCount = ElementsCount(_regionsList);
             int regionIndex = random.Next(regionsCount);
             var region = _webDriver.FindElement(_regionsList).FindElements(_listElement).ElementAt(regionIndex);

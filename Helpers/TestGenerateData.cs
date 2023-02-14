@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace DnsCitySelectorTests.Helpers
 {
@@ -24,5 +19,16 @@ namespace DnsCitySelectorTests.Helpers
         {
             return Faker.RandomNumber.Next(30000).ToString();
         }
+
+        public static string GetSpecialCharacters()
+        {
+            return "`~!@\"№#;$%:^?&*()_+={}[]/<>,.";
+        }
+
+        public static string GenerateBigCityWithSpacesBeforeAndAfter()
+        {
+            return "      " + getRandomBigCity() + "       ";
+        }
+
     }
 }
